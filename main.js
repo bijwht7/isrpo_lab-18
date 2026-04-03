@@ -65,10 +65,10 @@ console.log(a / b);
 console.log(10 + "5");
 console.log("10" - 5);
 
-const numberArray = [1, 2, 3];
+const numbersArray = [1, 2, 3];
 numbersArray[0] = 10;
 console.log(numbersArray);
-numbersArray = [5, 6, 7];
+//numbersArray = [5, 6, 7];
 const persons = { name: "Denis", age: 18 };
 persons.age = 50;
 persons.city = "Volgograd";
@@ -90,7 +90,7 @@ console.log(numberX === null);
 let newPrice = 10;
 console.log(newPrice);
 console.log(typeof newPrice);
-newPrice = fhnbihb;
+newPrice = "fhnbihb";
 console.log(newPrice);
 console.log(typeof newPrice);
 
@@ -140,3 +140,9 @@ console.log("x1 + y1 =", x1 + y1);
 console.log("x1 - y1 =", x1 - y1);
 console.log("x1 * y1 =", x1 * y1);
 console.log("x1 / y1 =", x1 / y1);
+
+let a2 = 67;
+let b2 = 52;
+console.log("a2 + b2 =", a2 + b2);
+console.log("a2 * b2 =", a2 * b2);
+
