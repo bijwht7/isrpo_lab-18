@@ -18,8 +18,8 @@ console.log(`Привет, ${userName}!`);
 
 let price = 99.99;
 let temperature = -15;
-let infinity = 1/0;
-let notANumber = 0/0;
+let infinity = 1 / 0;
+let notANumber = 0 / 0;
 console.log(0.1 + 0.2);
 let bigNumber = 9007199254567n;
 let huge = BigInt("123456789012345678901234567890");
@@ -31,25 +31,25 @@ let y = undefined;
 let userData = null;
 let id = Symbol("id");
 let person = {
-    name: "Станислав",
-    age: 30,
-    isStudent: false,
-    sayHello: function (){
-        console.log("Привет");
-    },
+  name: "Станислав",
+  age: 30,
+  isStudent: false,
+  sayHello: function () {
+    console.log("Привет");
+  },
 };
 
 console.log(person.name);
-let fruits = ["яблоко","банан","апельсин"];
+let fruits = ["яблоко", "банан", "апельсин"];
 let numbers = [1, 2, 3, 4, 5];
 let mixed = ["текст", 42, true, null];
 
-function sum(a, b){
-    return a + b;
+function sum(a, b) {
+  return a + b;
 }
 
-let multiply = function (x, y){
-    return x * y;
+let multiply = function (x, y) {
+  return x * y;
 };
 
 console.log(sum(5, 3));
@@ -62,18 +62,18 @@ console.log(a + b);
 console.log(a - b);
 console.log(a * b);
 console.log(a / b);
-console.log(10+ "5");
+console.log(10 + "5");
 console.log("10" - 5);
 
 const numberArray = [1, 2, 3];
 numbersArray[0] = 10;
 console.log(numbersArray);
 numbersArray = [5, 6, 7];
-const persons = {name: "Denis", age: 18};
+const persons = { name: "Denis", age: 18 };
 persons.age = 50;
 persons.city = "Volgograd";
 console.log(persons);
-person = {name: "Stas"};
+person = { name: "Stas" };
 
 console.log(typeof "текст");
 console.log(typeof 42);
@@ -114,3 +114,22 @@ console.log(true + 1);
 console.log(false + 1);
 console.log(null + 1);
 console.log(undefined + 1);
+console.log(5 == "5");
+console.log(5 === "5");
+console.log(0 == false);
+console.log(0 === false)
+console.log(null == undefined);
+console.log(null === undefined);
+
+let obj1 = { name: "John" };
+let obj2 = { name: "John" };
+
+console.log(obj1 == obj2);
+console.log(obj1 === obj2);
+
+let obj3 = obj1;
+console.log(obj1 === obj3);
+
+let arr1 = [1, 2, 3];
+let arr2 = [1, 2, 3];
+console.log(arr1 === arr2);
